@@ -3,7 +3,7 @@
     @mixin button;
 
     &.Button--primary {
-      @mixin solidColor var(--primaryBase), var(--grayscaleWhiteBase), var(--primaryLighten20);
+      @mixin solidColor var(--primaryLighten20), var(--grayscaleWhiteBase), var(--primaryBase);
     }
 
     &.Button--secondary {

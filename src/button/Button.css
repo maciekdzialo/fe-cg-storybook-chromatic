@@ -1,0 +1,73 @@
+.Button {
+  &.Button--solid {
+    @mixin button;
+
+    &.Button--primary {
+      @mixin solidColor var(--primaryBase), var(--grayscaleWhiteBase), var(--primaryLighten20);
+    }
+
+    &.Button--secondary {
+      @mixin solidColor var(--grayscaleBlackLighten10), var(--grayscaleWhiteBase), var(--grayscaleBlackLighten20);
+    }
+
+    &.Button--tertiary {
+      @mixin solidColor var(--grayscaleWhiteBase), var(--grayscaleBlackLighten10), var(--grayscaleBlackLighten40);
+    }
+  }
+
+  &.Button--outline {
+    @mixin outlineButton;
+
+    &.Button--primary {
+      @mixin outlineColor var(--primaryBase), var(--primaryLighten60);
+    }
+
+    &.Button--secondary {
+      @mixin outlineColor var(--grayscaleBlackLighten10), var(--grayscaleBlackLighten50);
+    }
+
+    &.Button--tertiary {
+      @mixin outlineColor var(--grayscaleWhiteBase), var(--grayscaleBlackLighten20);
+    }
+  }
+
+  &.Button--circle {
+    @mixin circleButton;
+
+    &.Button--primary {
+      @mixin solidColor var(--primaryBase), var(--grayscaleWhiteBase), var(--primaryLighten20);
+    }
+
+    &.Button--secondary {
+      @mixin solidColor var(--grayscaleBlackLighten10), var(--grayscaleWhiteBase), var(--grayscaleBlackLighten20);
+    }
+
+    &.Button--tertiary {
+      @mixin solidColor var(--grayscaleWhiteBase), var(--grayscaleBlackLighten10), var(--grayscaleBlackLighten40);
+    }
+  }
+
+  &.Button--clear {
+    @mixin resetButtonStyles;
+  }
+
+  &.Button--xsmall {
+    @mixin xSmallButton;
+  }
+
+  &.Button--small {
+    @mixin smallButton;
+  }
+
+  &.Button--medium {
+    @mixin mediumButton;
+  }
+
+  &.Button--large {
+    @mixin largeButton;
+  }
+
+  &.Button--xlarge {
+    @mixin xLargeButton;
+  }
+}

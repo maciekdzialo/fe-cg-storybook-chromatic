@@ -1,0 +1,120 @@
+:root {
+  --baseFontFamily: "Calibre", sans-serif;
+  --headingsFontFamily: "Suisse Works", serif;
+
+  /* FONT WEIGHT */
+  --boldFontWeight: 700;
+  --semiBoldFontWeight: 600;
+  --mediumFontWeight: 500;
+  --regularFontWeight: 400;
+
+  /* <NEW COLORS> */
+
+  /* PRIMARY */
+  --primaryLighten60: #ffe3eb;
+  --primaryLighten40: #ff8faf;
+  --primaryLighten20: #ff024c;
+  --primaryBase: #e50043;
+  --primaryDarken20: #b70036;
+  --primaryDarken40: #890028;
+  --primaryDarken60: #5c001b;
+  --transparent: transparent;
+
+  /* SHADOW EFFECT */
+  --boxShadow10: 0 0 16px rgba(33, 33, 33, 0.08);
+  --boxShadow20: 0 0 24px rgba(33, 33, 33, 0.16);
+  --boxShadow30: 0 0 48px rgba(33, 33, 33, 0.24);
+  --backgroundShadow: rgba(33, 33, 33, 0.33);
+
+  /* GRAYSCALE */
+  --grayscaleWhiteBase: #ffffff;
+  --grayscaleBlackLighten50: #e6e6e6;
+  --grayscaleBlackLighten40: #d1d3d4;
+  --grayscaleBlackLighten30: #828282;
+  --grayscaleBlackLighten20: #485156;
+  --grayscaleBlackLighten10: #212121;
+  --grayscaleBlackBase: #000000;
+
+  /* SUPPORT */
+  --support01Lighten60: #fbf9f5;
+  --support01Lighten20: #f2edea;
+  --support01Base: #ddc7c2;
+  --support02Base: #d3e1ba;
+  --support03Lighten60: #eff5fc;
+  --support03Base: #b4d0e7;
+  --support04Lighten20: #ffb37f;
+  --support04Base: #fe6800;
+  --support04Darken20: #bf4e00;
+  --support05Lighten20: #9debe2;
+  --support05Base: #09baa6;
+  --support05Darken20: #067f73;
+  --support06Lighten20: #d2abeb;
+  --support06Base: #a25ccd;
+  --support06Darken20: #542372;
+  --support07Lighten20: #7ed3aa;
+  --support07Base: #058849;
+  --support07Darken20: #045e33;
+  --support08Lighten20: #ffe19a;
+  --support08Base: #ffc235;
+  --support08Darken20: #e7a100;
+
+  /* ACTION */
+  --actionErrorBase: #ff2323;
+  --actionWarningBase: #f5ba30;
+  --actionSuccessBase: #19d5a0;
+
+  /* NOTIFICATION */
+  --notificationFocusLighten60: #d3f2ff;
+  --notificationFocusBase: #0192d0;
+  --notificationSuccessLighten60: #d4f3e6;
+  --notificationSuccessBase: #03804d;
+  --notificationWarningLighten60: #ffe6c1;
+  --notificationWarningBase: #ff8b00;
+  --notificationErrorLighten60: #fdded8;
+  --notificationErrorBase: #b12a0b;
+
+  /* </ NEW COLORS> */
+
+  /* LAYOUT */
+  --wrapperWidth: 1440px;
+  --mobileWrapperPadding: 32px;
+  --mobileGutter: 16px;
+  --tabletWrapperPadding: 32px;
+  --tabletGutter: 24px;
+  --desktopSmallWrapperPadding: 40px;
+  --desktopSmallGutter: 24px;
+  --desktopLargeWrapperPadding: 80px;
+  --desktopLargeGutter: 40px;
+
+  /* OTHER */
+  --headerHeight: 80px;
+  --mobileHeaderHeight: 60px;
+  --footerMinHeight: 100px;
+  --mobileFooterMinHeight: 252px;
+
+  /* HEADINGS SIZES */
+  --h0FontSize: 5.5rem; /* 88px */
+  --h0LineHeight: 1.18; /* 104px */
+  --h1FontSize: 2.8125rem; /* 45px */
+  --h1LineHeight: 1.22; /* 55px */
+  --h2FontSize: 1.875rem; /* 30px */
+  --h2LineHeight: 1.33; /* 40px */
+  --h3FontSize: 1.25rem; /* 20px */
+  --h3LineHeight: 1.3; /* 26px */
+  --h4FontSize: 1rem; /* 16px */
+  --h4LineHeight: 1.25; /* 20px */
+  --h5FontSize: 0.875rem; /* 14px */
+  --h5LineHeight: 1.25; /* 20px */
+  --b0FontSize: 1.125rem; /* 18px */
+  --b0LineHeight: 1.55; /* 28px */
+  --b1FontSize: 1.25rem; /* 20px */
+  --b1LineHeight: 1.4; /* 28px */
+  --b2FontSize: 1rem; /* 16px */
+  --b2LineHeight: 1.5; /* 24px */
+  --b3FontSize: 0.875rem; /* 14px */
+  --b3LineHeight: 1.28; /* 18px */
+
+  /* MOBILE SAFARI */
+
+  --mobileSafariBottomInset: 80px; /* ADDED TO FIX PROBLEM IN MOBILE SAFARI (15.2) WITH SEARCH BAR AT THE BOTTOM */
+}

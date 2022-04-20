@@ -1,0 +1,206 @@
+@define-mixin resetButtonStyles {
+  font-family: var(--baseFontFamily);
+  background: unset;
+  font-weight: 400;
+  cursor: pointer;
+  padding: unset;
+  border: unset;
+  border-radius: 0;
+
+  &:hover {
+    background: unset;
+    border: unset;
+  }
+}
+
+@define-mixin solidColor $backgroundColor, $contentColor, $hoverBackgroundColor {
+  background: $backgroundColor;
+  color: $contentColor;
+  border-color: $backgroundColor;
+
+  &:hover {
+    background: $hoverBackgroundColor;
+    border-color: $hoverBackgroundColor;
+  }
+
+  &:disabled,
+  &:disabled:hover {
+    background: $backgroundColor;
+    border-color: $backgroundColor;
+  }
+}
+
+@define-mixin outlineColor $contentColor, $hoverBackgroundColor {
+  background: transparent;
+  color: $contentColor;
+  border-color: $contentColor;
+
+  &:hover {
+    background: $hoverBackgroundColor;
+  }
+
+  &:disabled,
+  &:disabled:hover {
+    background: transparent;
+  }
+}
+
+@define-mixin strokeIconColor $color {
+  fill: none;
+  stroke: $color;
+}
+
+@define-mixin button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  max-width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s ease-out, border-color 0.3s ease-out, box-shadow 0.3s ease-out;
+  font-family: var(--headingsFontFamily);
+  font-weight: 700;
+  border: 1px solid;
+  border-radius: 32px;
+
+  &:disabled,
+  &:disabled:hover {
+    opacity: 0.4;
+    cursor: default;
+  }
+
+  & .SvgIcon {
+    fill: currentColor;
+    flex-shrink: 0;
+
+    &:first-child:not(:only-child) {
+      margin-right: auto;
+    }
+
+    &:last-child:not(:only-child) {
+      margin-left: auto;
+    }
+  }
+
+  & > * {
+    &:first-child:not(:only-child) {
+      text-align: left;
+    }
+
+    &:last-child:not(:only-child) {
+      text-align: right;
+    }
+  }
+}
+
+@define-mixin outlineButton {
+  @mixin button;
+}
+
+@define-mixin circleButton {
+  @mixin button;
+  border-radius: 50%;
+}
+
+@define-mixin xSmallButton {
+  & .SvgIcon {
+    width: 16px;
+    height: 16px;
+  }
+
+  &.Button--circle {
+    width: 24px;
+    height: 24px;
+    padding: 4px;
+  }
+
+  &.Button--solid,
+  &.Button--outline {
+    @mixin p40;
+    gap: 16px;
+    padding: 1px 15px;
+  }
+}
+
+@define-mixin smallButton {
+  & .SvgIcon {
+    width: 16px;
+    height: 16px;
+  }
+
+  &.Button--circle {
+    width: 32px;
+    height: 32px;
+    padding: 8px;
+  }
+
+  &.Button--solid,
+  &.Button--outline {
+    @mixin p40;
+    gap: 24px;
+    padding: 5px 23px;
+  }
+}
+
+@define-mixin mediumButton {
+  & .SvgIcon {
+    width: 24px;
+    height: 24px;
+  }
+
+  &.Button--circle {
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+  }
+
+  &.Button--solid,
+  &.Button--outline {
+    @mixin p30;
+    gap: 24px;
+    padding: 7px 23px;
+  }
+}
+
+@define-mixin largeButton {
+  & .SvgIcon {
+    width: 24px;
+    height: 24px;
+  }
+
+  &.Button--circle {
+    width: 48px;
+    height: 48px;
+    padding: 12px;
+  }
+
+  &.Button--solid,
+  &.Button--outline {
+    @mixin p30;
+    gap: 32px;
+    padding: 10px 30px;
+    border-width: 2px;
+  }
+}
+
+@define-mixin xLargeButton {
+  & .SvgIcon {
+    width: 24px;
+    height: 24px;
+  }
+
+  &.Button--circle {
+    width: 64px;
+    height: 64px;
+    padding: 20px;
+  }
+
+  &.Button--solid,
+  &.Button--outline {
+    @mixin h50;
+    gap: 40px;
+    padding: 14px 38px;
+    border-width: 2px;
+  }
+}

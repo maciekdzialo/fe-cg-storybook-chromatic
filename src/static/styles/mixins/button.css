@@ -200,7 +200,7 @@
   &.Button--outline {
     @mixin h50;
     gap: 40px;
-    padding: 12px 38px;
+    padding: 10px 38px;
     border-width: 2px;
   }
 }

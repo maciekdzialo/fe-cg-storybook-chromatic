@@ -45,7 +45,7 @@
     "eject": "craco eject",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
-    "chromatic": "npx chromatic --project-token=9d537a6f33ad"
+    "chromatic": "npx chromatic --project-token=9d537a6f33ad --exit-zero-on-changes || true"
   },
   "eslintConfig": {
     "extends": [
